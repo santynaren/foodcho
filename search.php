@@ -2,12 +2,12 @@
     //$key=$_GET['key'];
     //$city=$_GET['city_name'];
 
-    $username="root";
+    $username="";// Username
     $array = array();
-    $databasename="zomato";
-    $tablename="hotel_details";
-    $password="";
-    $servername="localhost";
+    $databasename=""; // Database Name 
+    $tablename=""; // table Name
+    $password="";// Password
+    $servername=""; // Server Name 
     $key = $_POST['key'];
     $city = $_POST['city_name'];
 
