@@ -16,18 +16,33 @@
     $query = $con->query($slt);
    
     
-
-    while($row=mysqli_fetch_assoc($query))
-    {
-        ?>
-    <div id="tab">
-        <h5><?php echo '<a href="http://localhost/zomato/hotel.php?id='.$row['id'].'"> ';  echo $row['hotel_name'];?></a></h5>
+  
+?>
    
-       <h6> <?php echo $row['location'];?></h6>
-       <hr>
-    <div>
-    <?php
-     
+
+
+      
+        <hr>
+        <div> <?php
+         if (mysqli_num_rows($query)== 0){
+             ?> <div id="tab">
+             <h5>
+                 No Suggestions
+             </h5><?php
+            } else {
+                while($row=mysqli_fetch_assoc($query)) { ?>
+            <div id="tab">
+                <h5>
+                    <?php echo '<a href="http://foodcho.smazee.com/hotel.php?id='.$row['id'].'"> ';  echo $row['hotel_name'];?></a>
+                </h5>
+
+                <h6>
+                    <?php echo $row['location'];?>
+                </h6>
+                <hr>
+                <div>
+                    <?php
+                }
      
       
       

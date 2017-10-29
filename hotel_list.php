@@ -14,8 +14,8 @@
     $con = new mysqli($servername,$username,$password,$databasename);
     $slt="select * from hotel_details WHERE hotel_name LIKE '%{$key}%' AND city_name LIKE '%{$city}%' ";
     $query = $con->query($slt);
-   
-   
+    
+    
     
       ?>
 
@@ -24,7 +24,7 @@
     <html lang="en">
 
     <head>
-        <title>Food Cho</title>
+        <title>FoodCho</title>
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -50,15 +50,21 @@
 
         <nav aria-label="breadcrumb" role="navigation">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="http://localhost/zomato/">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Hotels at  <?php echo $city;?> </a></li>
+                <li class="breadcrumb-item"><a href="http://foodcho.smazee.com/">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Restaurants  at  <?php echo $city;?> </a></li>
             </ol>
         </nav>
 
 
         <?php
+    if(mysqli_num_rows($query)==0){
+           echo"<h1><center>No Restarunts as requested </center></h1>";
+    }else{
+
+    
         while($row=mysqli_fetch_assoc($query))
         {
+           
             ?>
             <div class="container">
                 <div class="card mb-3" >
@@ -71,7 +77,7 @@
                         <p class="card-text">
                             <?php echo $row['cusine_type'];?> | <?php echo $row['non_veg_check'];?>
                         </p>
-                        <?php echo '<a  class="btn btn-primary" href="http://localhost/zomato/hotel.php?id='.$row['id'].'"';?>>INR <?php echo $row['pay_for_two'];?></a>
+                        <?php echo '<a  class="btn btn-primary" href="http://foodcho.smazee.com/hotel.php?id='.$row['id'].'"';?>>INR <?php echo $row['pay_for_two'];?></a>
                     </div>
                 </div>
                 
@@ -81,10 +87,11 @@
 
             <?php
      
-     
+            }
+        
       
       
-    }
+        }
     echo'</ul>';
   
    
