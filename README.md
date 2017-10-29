@@ -1,2 +1,2 @@
 # foodcho
-Zomato Clone for GoBumpr Internship
+Zomato tiny version clone for GoBumpr Internship
