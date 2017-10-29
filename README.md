@@ -26,6 +26,22 @@ I have used Firebase mainly to Generate Comments Section in Hotel Page View .
 
 I have used the Core PHP to make the overall transition of pages look good .
 
+## Data Used
+
+Below is the Data I have used , Kindly refer
+
+| City        | Hotel Name           | Pay for two  |
+| ------------- |:-------------:| -----:|
+| Chennai      | Hotel Saravana Bhavan | 100|
+| Chennai     | Hotel Dindgul Thalapakati      |   300 |
+| Trichy | Hotel Kurunji    |    80 |
+| Trichy      | Hotel Southern Spice | 350 |
+| Thane      | Hotel Shagun     |   200 |
+| Thane | Wangs Kitchen    |    450 |
+
+
+
+
 ## Further More
 
 I am trying to add Reply button to the comments , it's almost getting closer . 
