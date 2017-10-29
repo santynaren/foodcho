@@ -24,7 +24,7 @@
     <html lang="en">
 
     <head>
-        <title>Hello, world!</title>
+        <title>Food Cho</title>
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
