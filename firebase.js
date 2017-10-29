@@ -1,6 +1,6 @@
 
 var config = {
-    apiKey: "AIzaSyB5EJrhxFhyG6L2eiMEw7HiWe8zR6ekPgc",
+    apiKey: "AIzaSyB5EJrhxFhyG6L2eiMEw7HiWe8zR6ekPgc",//API Key
     authDomain: "foodcho-6f570.firebaseapp.com",
     databaseURL: "https://foodcho-6f570.firebaseio.com",
     projectId: "foodcho-6f570",
